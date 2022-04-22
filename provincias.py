@@ -67,3 +67,15 @@ class Provincia():
         manejador = Sqlite(BD)
         resp = manejador.borrar(Provincia.tabla,'id',id_provincia)
         return resp
+
+    @property
+    def id(self):
+        return self.__id
+
+    @property
+    def codigo(self):
+        return self.__codigo
+
+    @property
+    def descripcion(self):
+        return self.__descripcion
